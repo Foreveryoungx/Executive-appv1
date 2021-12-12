@@ -1,10 +1,11 @@
 import React from 'react';
 import CardItem from "./CardItem";
 
+
 const HaircutsCard = () => {
     return (
         <div className='cards'>
-            <h1>Services</h1>
+            <h1>Hair</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
@@ -13,7 +14,7 @@ const HaircutsCard = () => {
                             text="Haircut only"
                             label='Basic Haircut'
                             price='$25.00'
-                            path='/services'
+                            path=''
                         />
                         <CardItem
                             src="images/barber.png"
@@ -51,11 +52,10 @@ const HaircutsCard = () => {
                             label='Holiday haircut'
                             price='$100.00'
                             path='/services'
-                        />
+                            />
                     </ul>
                 </div>
             </div>
-
         </div>
     )
 };
