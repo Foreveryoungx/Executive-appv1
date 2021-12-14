@@ -88,7 +88,6 @@ const Home = () => {
                         <Link to={'/services'}>
                         <Button
                             colorScheme={'green'}
-                            onClick={'/services'}
                             bg={'gold'}
                             rounded={'full'}
                             px={6}
