@@ -9,7 +9,6 @@ import Link from "react-router-dom/es/Link";
 
 
 const Home = () => {
-
     const Arrow = createIcon({
         displayName: 'Arrow',
         viewBox: '0 0 72 24',
@@ -29,7 +28,7 @@ const Home = () => {
     return (
         <>
             <Head>
-                <title>Home</title>
+
                 <link
                     href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
                     rel="stylesheet"
@@ -39,48 +38,50 @@ const Home = () => {
             w={'full'}
             h={'50vh'}
             backgroundImage={
-                'url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)'
+                'url(https://res.cloudinary.com/dvfdkfitt/image/upload/v1640240291/2020-10-27_11.00.22_xvhzat.jpg)'
             }
             backgroundSize={'cover'}
             backgroundPosition={'center center'}>
             <VStack
                 w={'100vw'}
+                h={'100vh'}
                 justify={'center'}
                 px={useBreakpointValue({ base: 4, md: 8 })}
                 bgGradient={'linear(to-r, blackAlpha.600,transparent)'}>
 
 
                            <Button
-                            bg={'whiteAlpha.300'}
+                            bg={'white'}
                             rounded={'full'}
-                            color={'#A38A00'}
-                            _hover={{ bg: 'whiteAlpha.500' }}
+                            color={'#85002E'}
+                            _hover={{ bg: '#338791', color: 'white' }}
                            onClick={btnClick}>
                             BOOK NOW
                        </Button>
 
             </VStack>
         </Flex>
-            <Container maxW={'3xl'} color={"black"}>
+            <Container maxW={'3xl'} bg={"black"}>
                 <Stack
                     as={Box}
                     textAlign={'center'}
                     spacing={{ base: 8, md: 14 }}
                     py={{ base: 20, md: 36 }}
-                    color={'black'}>
+                    >
                     <Heading
                         fontWeight={600}
                         fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-                        lineHeight={'110%'} color={'#A38A00'}>
+                        lineHeight={'110%'} color={'white'}>
                        Explore Our Variety<br />
-                        <Text as={'span'} color={'#A38A00'}>
+                        <Text as={'span'} color={'white'}>
                             Of Services
                         </Text>
                     </Heading>
-                    <Text color={'#A38A00'}>
+                    <Text color={'white'}>
                         A grooming experience like none other. One on one hair care service with all of the amenities (Facial, wax, razor, etc). You only feel your best when you look it. Come feel like “The ExecutIV”.
                     </Text>
                     <Stack
+
                         direction={'column'}
                         spacing={3}
                         align={'center'}
@@ -89,11 +90,12 @@ const Home = () => {
                         <Link to={'/services'}>
                         <Button
                             colorScheme={'green'}
-                            bg={'gold'}
+                            bg={'white'}
+                            color={'#85002E'}
                             rounded={'full'}
                             px={6}
                             _hover={{
-                                bg: '#A38A00',
+                                bg: '#338791', color: 'white'
                             }}
                         // onClick={}
                             >
@@ -103,7 +105,7 @@ const Home = () => {
                         <Box>
                             <Icon
                                 as={Arrow}
-                                color={'#A38A00'}
+                                color={'white'}
                                 w={71}
                                 position={'absolute'}
                                 right={-71}
@@ -115,8 +117,8 @@ const Home = () => {
                                 position={'absolute'}
                                 right={'-125px'}
                                 top={'-15px'}
-                                transform={'rotate(10deg)'}
-                                color={'#A38A00'}>
+                                transform={'rotate(15deg)'}
+                                color={'white'}>
                                 Explore More Services
                             </Text>
                         </Box>

@@ -36,11 +36,11 @@ function Footer() {
             <section className='social-media'>
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
-                        <Link to='/' className='social-logo' color={'#A38A00'}>
+                        <Link to='/' className='social-logo' >
                             EXECUTIV
                         </Link>
                     </div>
-                    <small className='website-rights' color={'#A38A00'}>EXECUTIV © 2020 by <Link to='/' >  TDAVisuals</Link></small>
+                    <small className='website-rights' color={'#85002E'}>EXECUTIV © 2020 by <Link to='/' >  TDAVisuals</Link></small>
                     <div className='social-icons'>
                         <Link
                             className='social-icon-link'
@@ -48,7 +48,7 @@ function Footer() {
                             target='_blank'
                             aria-label='Facebook'
                         >
-                            <FaFacebook color={'#A38A00'}/>
+                            <FaFacebook color={'#338791'}/>
                         </Link>
                         <Link
                             className='social-icon-link'
@@ -58,7 +58,7 @@ function Footer() {
                             target='_blank'
                             aria-label='Instagram'
                         >
-                            <FaInstagram color={'#A38A00'} />
+                            <FaInstagram color={'#338791'} />
                         </Link>
                         <Link
                             className='social-icon-link'
@@ -66,7 +66,7 @@ function Footer() {
                             target='_blank'
                             aria-label='Twitter'
                         >
-                            <FaTwitter color={'#A38A00'}/>
+                            <FaTwitter color={'#338791'}/>
                         </Link>
                         <Link
                             className='social-icon-link'
@@ -74,7 +74,7 @@ function Footer() {
                             target='_blank'
                             aria-label='LinkedIn'
                         >
-                            <FaLinkedin color={"#A38A00"} />
+                            <FaLinkedin color={"#338791"} />
                         </Link>
                     </div>
                 </div>
