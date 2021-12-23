@@ -6,7 +6,7 @@ import {
     Button, useBreakpointValue, VStack, Box, Heading, Container, Stack,Text, Icon, createIcon
 } from '@chakra-ui/react';
 import Link from "react-router-dom/es/Link";
-
+import Logo from "../../Images/Executiv_Grooming.jpg"
 
 const Home = () => {
     const Arrow = createIcon({
@@ -37,9 +37,7 @@ const Home = () => {
         <Flex
             w={'full'}
             h={'50vh'}
-            backgroundImage={
-                'url(https://res.cloudinary.com/dvfdkfitt/image/upload/v1640240291/2020-10-27_11.00.22_xvhzat.jpg)'
-            }
+            backgroundImage={Logo}
             backgroundSize={'cover'}
             backgroundPosition={'center center'}>
             <VStack
