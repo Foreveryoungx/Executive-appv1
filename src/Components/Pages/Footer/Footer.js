@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {
     FaFacebook,
     FaInstagram,
@@ -36,15 +36,16 @@ function Footer() {
             <section className='social-media'>
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
-                        <Link to='/' className='social-logo' >
+                        <Link to='/' className='social-logo'>
                             EXECUTIV
                         </Link>
                     </div>
-                    <small className='website-rights' color={'#85002E'}>EXECUTIV © 2020 by <Link to='/' >  TDAVisuals</Link></small>
+                    <small className='website-rights' color={'#85002E'}>EXECUTIV © 2020 by <Link
+                        to='//https://www.instagram.com/treydevs/'> TDAVisuals</Link></small>
                     <div className='social-icons'>
                         <Link
                             className='social-icon-link'
-                            to={'//www.facebook.com/'}
+                            to={'https://www.facebook.com/executIVgrooming/'}
                             target='_blank'
                             aria-label='Facebook'
                         >
@@ -53,12 +54,12 @@ function Footer() {
                         <Link
                             className='social-icon-link'
                             to={
-                                '//https://instagram.com/executivgrooming?utm_medium=copy_link'
+                                'https://www.instagram.com/executivgrooming/'
                             }
                             target='_blank'
                             aria-label='Instagram'
                         >
-                            <FaInstagram color={'#338791'} />
+                            <FaInstagram color={'#338791'}/>
                         </Link>
                         <Link
                             className='social-icon-link'
@@ -74,7 +75,7 @@ function Footer() {
                             target='_blank'
                             aria-label='LinkedIn'
                         >
-                            <FaLinkedin color={"#338791"} />
+                            <FaLinkedin color={"#338791"}/>
                         </Link>
                     </div>
                 </div>
